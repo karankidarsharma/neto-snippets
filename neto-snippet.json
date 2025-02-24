@@ -1,0 +1,65 @@
+{
+	
+
+	"Neto ifelse": {
+		"prefix": "_neto_ifelse",
+		"body": "[%if %] [%else%]  [%/if%]"
+		
+	},
+	"Neto set": {
+		"prefix": "_neto_set",
+		"body": "[%set [@tagname@]%]   [%/set%]"
+	},
+	"Neto body": {
+		"prefix": "_neto_create_body",
+		"body": "[%param *header%] [%/param%]   [%param body%] [%/param%]  [%param *footer%] [%/param%]"
+	},
+	"Neto footer_js": {
+		"prefix": "_neto_footer_javascript",
+		"body": "[%SITE_VALUE id:'footer_javascript'%] [%/ SITE_VALUE%]"
+	},
+	"Neto debug": {
+		"prefix": "_neto_debug",
+		"body": "[%debug show_data:'1'/%]"
+	},
+	"Neto tag with %": {
+		"prefix": "%neto",
+		"body": "[% %] [%/ %]"
+	},
+	"Neto tag with @": {
+		"prefix": "@neto",
+		"body": "[@ @]"
+	},
+	"Neto load template": {
+		"prefix": "_neto_load_template",
+		"body": "[%load_template file:'cms/includes/ XXXXXXX.template.html'/%]"
+	},
+	"Neto create body param": {
+		"prefix":"_neto_create_body_tag",
+		"body":"[%param *body%]  [%/param%]"
+	},
+	"Neto create header param": {
+		"prefix":"_neto_create_header_tag",
+		"body":"[%param *header%]  [%/param%]"
+	},
+	"Neto create footer param": {
+		"prefix":"_neto_create_footer_tag",
+		"body":"[%param footer%]  [%/param%]"
+	},
+	"Neto create basic advert": {
+		"prefix":"_neto_create_advert_tag",
+		"body":"[%advert type:'text' ad_group:'pdp_brand_campaigns' template:'' limit:'1'%] [%/advert%]"
+	},
+	"Neto create if": {
+		"prefix":"if_neto",
+		"body":"[%if  %] [%/if%]"
+	},
+	"Neto create else": {
+		"prefix":"else_neto",
+		"body":"[%else%]"
+	},
+	"Neto nthems file" :{
+		"prefix": "ntheme",
+		"body":"[%ntheme_asset%]img/{image-name}[%/ntheme_asset%]"
+	}
+}
